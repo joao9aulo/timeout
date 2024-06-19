@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="timeout" />
         <module name="slowservice" />
+        <module name="anotherslowservice" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="anotherslowservice" options="-parameters" />
       <module name="slowservice" options="-parameters" />
       <module name="timeout" options="-parameters" />
     </option>
